@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NAMELESS — Behind the Scenes at BPDC." />
+    <title>NAMELESS — Behind the Scenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="desktop-site">
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"><span></span></div>
+    <div class="grain" aria-hidden="true"></div>
+    <canvas id="pathwayCanvas" aria-label="Three-dimensional story pathway"></canvas>
+    <div class="pathway-hud" aria-live="polite"><span id="pathwayNumber">00 / 07</span><span id="pathwayTitle">THE ARCHIVE</span></div>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="NAMELESS home">NAMELESS</a>
+      <span class="header-subtitle">BEHIND THE SCENES</span>
+      <button class="notice-button" type="button" data-open-notice>NOTICE</button>
+    </header>
+    <main id="top">
+      <section class="opening" aria-labelledby="opening-title">
+        <div class="opening-kicker">Mediathon 2026 / BPDC</div>
+        <div class="opening-center"><p class="eyebrow">An interactive visual archive</p><h1 id="opening-title">YOU PASS THEM<br /><em>EVERY DAY.</em></h1><p class="opening-note">Look closer.</p><a class="enter-button" href="#story-01">ENTER <span aria-hidden="true">↘</span></a></div>
+        <div class="opening-footer"><span>01</span><span>THE STUFF PEOPLE NORMALLY DON'T NOTICE.</span></div>
+      </section>
+      <section class="exhibition-intro" aria-label="Exhibition introduction"><p class="eyebrow">The ordinary day at BPDC</p><h2>Students see the campus.<br /><span>Someone keeps it moving.</span></h2></section>
+      <aside class="story-index" aria-label="Story index"><div class="index-heading">INDEX <span id="progressText">00 / 07</span></div><nav id="storyNav"></nav></aside>
+      <div id="storyTrack"></div>
+      <section class="ending" id="ending" aria-labelledby="ending-title"><div class="ending-collage" id="endingCollage" aria-hidden="true"></div><div class="ending-copy"><p class="ending-line" id="ending-title">YOU SAW THE CAMPUS.</p><p class="ending-line">NOW LOOK AGAIN.</p><p class="ending-line final-statement">THE PEOPLE BEHIND IT<br /><span>WERE NEVER REALLY INVISIBLE.</span></p><p class="ending-metrics">07 STORIES<br />20 MOMENTS<br />ONE CAMPUS</p><p class="ending-brand">NAMELESS <small>BEHIND THE SCENES</small></p><p class="ending-last">YOU PASS THEM EVERY DAY.<br />NOW YOU'VE SEEN THEM.</p></div></section>
+    </main>
+    <div class="notice-overlay" id="noticeOverlay" hidden><button class="overlay-close" type="button" data-close-notice aria-label="Close notice">CLOSE ×</button><div class="notice-copy"><p>NOTICE.</p><p>Most of the campus is easy to notice.</p><p>The people behind it aren't.</p><p><em>Look closer.</em></p></div></div>
+    <div class="photo-viewer" id="photoViewer" hidden><button class="overlay-close" type="button" data-close-viewer aria-label="Close photo viewer">CLOSE ×</button><figure><img id="viewerImage" alt="" /><figcaption><span id="viewerCategory"></span><span id="viewerCaption"></span></figcaption></figure></div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="js/stories.js?v=20260925"></script><script src="js/locations.js?v=20260925"></script><script src="js/pathway.js?v=20260925"></script><script src="js/main.js?v=20260925"></script>
+  </body>
+</html>
